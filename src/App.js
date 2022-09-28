@@ -1,11 +1,13 @@
-import classes from "./App.module.scss";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./screens/home/Home";
 
 function App() {
   return (
-    <div className={classes.app}>
-      <h1>Nick Test SASS</h1>
-      <h2>APP Test</h2>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
