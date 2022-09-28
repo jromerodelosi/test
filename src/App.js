@@ -1,7 +1,10 @@
+import classes from "./App.module.scss";
+
 function App() {
   return (
-    <div>
+    <div className={classes.app}>
       <h1>Nick Test SASS</h1>
+      <h2>APP Test</h2>
     </div>
   );
 }
