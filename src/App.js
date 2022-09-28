@@ -3,7 +3,7 @@ import Home from "./screens/home/Home";
 
 function App() {
   return (
-    <Router basename={window.location.pathname || ""}>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path="/" element={<Home />} />
       </Routes>
